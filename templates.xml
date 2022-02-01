@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <!-- website.assets_frontend  (el template hereda del website.assets_frontend)
+            Si hereda del website.assets_backend lo que haremos es heredar del backend de odoo, es decir la parte del erp, pero no estaremos modificando el website. En este caso estaremos viendo como modificar el front end ya que es mas sencillo que el backend.
+        -->
+        <template id='assets_frontend_snippets' inherit_id='website.assets_frontend' name='Website Snippets'>
+            <!-- xpath lo utilizamos para agregar un script o importarlo -->
+            <xpath expr='.' position='inside'>
+                <script type='text/javascript' src='odoo_js/static/src/js/javascript.js'></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>
